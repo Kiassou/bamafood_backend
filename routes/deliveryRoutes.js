@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const controller = require('../controllers/deliverycontroller');
+const controller = require('../controllers/deliveryController');
 
 router.get('/', controller.getAllDeliveries);
 router.get('/deliverer/:delivererId', controller.getDeliveriesByDeliverer);
