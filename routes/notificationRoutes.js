@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const verifyToken = require('../middleware/authMiddleware'); // Ton middleware d'auth
-const notifyController = require('../controllers/NotificationController');
+const notifyController = require('../controllers/notificationController');
 
 // Route pour lister les messages (GET)
 router.get('/', verifyToken, notifyController.getMyNotifications);
